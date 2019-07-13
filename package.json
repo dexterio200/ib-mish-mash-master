@@ -14,5 +14,15 @@
   },
   "dependencies": {
     "nock": "^10.0.6"
-  }
+  },
+  "description": "This assignment covers the first week of the Intermediate Bootcamp. This repository contains 3 test files, each covering a single task. The order of the tasks does not matter. **You can complete them in any order.** Try to complete as many of them as you can.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adtrinh102/ib-mish-mash-master.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/adtrinh102/ib-mish-mash-master/issues"
+  },
+  "homepage": "https://github.com/adtrinh102/ib-mish-mash-master#readme"
 }
