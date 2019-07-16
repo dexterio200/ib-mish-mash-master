@@ -1,6 +1,5 @@
 const fetch = require("node-fetch")
 
-
 module.exports.getTatooineResidents = function() {
     return new Promise((resolve, reject) => {
         fetch("https://swapi.co/api/planets/1/")
@@ -10,14 +9,13 @@ module.exports.getTatooineResidents = function() {
     })
 }
 
-
-module.exports.promiseMeAString = function(str) {
+module.exports.promiseMeAString = function(input) {
     return new Promise((resolve, reject) => {
-        if (str === "I Promise!") {
-            resolve("You kept the Promise!")
-        }
-        if (str == null) {
+        if (!input) {
             reject("You have failed me!")
+        }
+        else {
+            resolve("You kept the Promise!")
         }
     })
 }
