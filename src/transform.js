@@ -1,4 +1,4 @@
-module.exports.groupAdultsByAgeRange = function (people) {
+function groupAdultsByAgeRange (people) {
     const categoriesByAge = {
         "20 and younger": [],
         "21-30": [],
@@ -54,3 +54,29 @@ module.exports.groupAdultsByAgeRange = function (people) {
 
     return categories
 }
+
+
+// Another way
+// const ranges = [
+//     [20, "20 and younger"],
+//     [30, "21-30"],
+//     [40, "31-40"],
+//     [50, "41-50"],
+//     [undefined, "51 and older"]]
+
+// function groupAdultsByAgeRange(people) {
+//     return people
+//         .filter(person => person.age >= 18)
+//         .reduce((groups, person) => {
+//             const [, label] = ranges.find(
+//                 ([max]) => max === undefined || person.age <= max)
+//             groups[label] = groups[label] || []
+//             // if (groups[range.label] === undefined)
+//             //     groups[range.label] = []
+//             groups[label].push(person)
+//             return groups
+//         }, {})
+// }
+
+
+module.exports = { groupAdultsByAgeRange }
