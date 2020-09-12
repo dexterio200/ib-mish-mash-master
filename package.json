@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "nock": "^10.0.6",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "description": "This assignment covers the first week of the Intermediate Bootcamp. This repository contains 3 test files, each covering a single task. The order of the tasks does not matter. **You can complete them in any order.** Try to complete as many of them as you can.",
   "repository": {
